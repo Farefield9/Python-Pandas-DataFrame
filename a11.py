@@ -1,0 +1,17 @@
+import pandas as pd
+import numpy as np
+a = pd.DataFrame([[25,24],['neha','rohit'],['female','male']],columns = ['marketing','sales'], index = ['age','name','gender'])
+print(a)
+print(a.index)
+print(a.columns)
+print(a.axes)
+print(a.dtypes)
+print(a.size)
+print(a.shape)
+print(a.empty)
+print(a.ndim)
+print(a.values)
+print(a.T)
+print(len(a))
+print(a.count())
+print(a.count(1))
