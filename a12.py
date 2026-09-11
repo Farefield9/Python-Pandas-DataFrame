@@ -1,0 +1,32 @@
+import pandas as pd
+import numpy as np
+a = pd.DataFrame([[1,2,3],[4,5,6],[7,8,9]],index = ['a','b','c'], columns = ['A','B','C'])
+print(a)
+print(a['A'])
+print(a.A)
+print(a[['A','B']])
+print(a.loc['a'])
+print(a.loc['a':'c'])
+print(a.loc['a':'c':2])
+print(a.loc['a':'b','A':'C'])
+print(a.loc[:,:])
+print(a.loc[['a','b'],['A','B']])
+print(a.iloc[1:4,0:2])
+print(a['A']>1)
+print(a.A['a'],',',a.B['c'])
+print(a.loc['a':'c','C':])
+print(a.loc['a':'c',:'A'][a['A']>1])
+b = a*5
+print(b)
+print(a*5)
+a['D']=10
+print(a)
+a.loc['c':,:'A']=10
+print(a)
+print(a.mean())
+print(a.mean(1))
+print(a.max())
+print(a.min(1))
+print(a.sum())
+a.drop(['a','c'], axis = 0, inplace = True)
+print(a)
