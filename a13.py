@@ -1,0 +1,15 @@
+import pandas as pd
+import numpy as np
+a = pd.DataFrame([[1,2],[3,4]])
+print(a)
+b = pd.DataFrame([['a','b'],['c','d']])
+print(b)
+c = pd.DataFrame([[5,6],[7,8]])
+print(c)
+print(a+c)
+print(a*c)
+print(a[0]+c[1])
+print(a.loc[:,0]+c.loc[:,1])
+print(a.loc[0:1,0:1]+c.loc[0:1,1:2])
+print(a*2)
+print(a+2)
